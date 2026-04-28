@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,400&amp;display=swap');
+      .badge-text { font-family: 'Fraunces', serif; font-style: italic; font-weight: 400; font-size: 32px; }
+    </style>
+  </defs>
+  <circle cx="40" cy="40" r="40" fill="#c1502b"/>
+  <text x="40" y="51" class="badge-text" fill="#f4f0e8" text-anchor="middle">M&amp;A</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 110" width="320" height="110">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,400&amp;family=DM+Sans:wght@400&amp;display=swap');
+      .mna { font-family: 'Fraunces', serif; font-style: italic; font-weight: 400; font-size: 96px; letter-spacing: -0.04em; }
+      .ink { fill: #1a1815; }
+      .accent { fill: #c1502b; }
+      .tagline { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 13px; letter-spacing: 2.4px; text-transform: uppercase; fill: #6b6660; }
+    </style>
+  </defs>
+  <text x="0" y="80" class="mna ink">M<tspan class="accent">&amp;</tspan>A</text>
+  <text x="2" y="102" class="tagline">Moon Advisory</text>
+</svg>
