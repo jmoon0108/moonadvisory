@@ -93,16 +93,9 @@
   }
 
   .logo-mna {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 28px;
-    letter-spacing: -0.03em;
-    line-height: 1;
-  }
-
-  .logo-mna .amp {
-    color: var(--accent);
+    height: 28px;
+    width: auto;
+    display: block;
   }
 
   .logo-divider {
@@ -168,17 +161,9 @@
   }
 
   .hero-mna {
-    font-family: 'Fraunces', serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(96px, 16vw, 200px);
-    letter-spacing: -0.05em;
-    line-height: 0.9;
-    color: var(--text);
-  }
-
-  .hero-mna .amp {
-    color: var(--accent);
+    width: clamp(280px, 50vw, 600px);
+    height: auto;
+    display: block;
   }
 
   .hero-tagline {
@@ -630,7 +615,7 @@
 <header id="header">
   <div class="container header-inner">
     <a href="#" class="logo">
-      <span class="logo-mna">M<span class="amp">&amp;</span>A</span>
+      <img src="assets/wordmark-twotone.svg" alt="M&A" class="logo-mna">
       <span class="logo-divider"></span>
       <span class="logo-tagline">Moon Advisory</span>
     </a>
@@ -648,8 +633,7 @@
     <div class="hero-eyebrow">M&amp;A Advisory</div>
 
     <div class="hero-lockup">
-      <div class="hero-mna">M<span class="amp">&amp;</span>A</div>
-      <div class="hero-tagline">Moon Advisory</div>
+      <img src="assets/logo-lockup.svg" alt="M&A — Moon Advisory" class="hero-mna">
     </div>
 
     <h1 class="hero-title">
@@ -806,10 +790,7 @@
 <footer>
   <div class="container">
     <div class="footer-top">
-      <svg class="footer-badge" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="40" cy="40" r="39" fill="none" stroke="#c1502b" stroke-width="1"/>
-        <text x="40" y="51" font-family="Fraunces, serif" font-style="italic" font-size="32" font-weight="400" fill="#1a1815" text-anchor="middle">M&amp;A</text>
-      </svg>
+      <img class="footer-badge" src="assets/badge-light.svg" alt="Moon Advisory">
       <div class="footer-meta">
         © 2026 Moon Advisory<br>
         <a href="mailto:contact@moonadvisory.group" style="color: inherit; text-decoration: none;">contact@moonadvisory.group</a>
