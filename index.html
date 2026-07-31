@@ -433,6 +433,37 @@
     line-height: 1.65;
   }
 
+  .services-group {
+    margin-bottom: 72px;
+  }
+
+  .services-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .services-group-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+  }
+
+  .services-group-label::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .services-grid-three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   /* ===== TRACK RECORD ===== */
   .track-strip {
     padding: 80px 0;
@@ -604,6 +635,8 @@
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-pull { position: static; padding: 32px; }
     .services-grid { grid-template-columns: 1fr; }
+    .services-grid-three { grid-template-columns: 1fr; }
+    .services-group { margin-bottom: 48px; }
     .track-companies { gap: 28px; }
     .track-company { font-size: 20px; }
     .track-divider { margin: 40px auto; }
@@ -638,10 +671,10 @@
     </div>
 
     <h1 class="hero-title">
-      Sharper decisions on <em>AI and software</em> deals — from sourcing to post-close integration.
+      A trusted partner for <em>AI and software</em> companies through funding, growth, and exit.
     </h1>
     <p class="hero-subtitle">
-      Independent M&amp;A and corporate development advisory for founders, PE firms, and strategic acquirers.
+      Independent advisory for founders, investors, and acquirers.
     </p>
 
     <div class="hero-cta">
@@ -680,13 +713,13 @@
     <div class="about-grid">
       <div class="about-text">
         <p>
-          Moon Advisory provides independent M&amp;A and corporate development advisory to founders, PE firms, and strategic acquirers — across the full deal lifecycle, from sourcing and valuation through diligence, negotiation, and post-close integration.
+          Moon Advisory provides independent advisory to founders, investors, and acquirers in AI and software across capital strategy, M&amp;A, and corporate development, from fundraising through post-close integration.
         </p>
         <p>
           The practice is led by Jamie Moon. Jamie has led M&amp;A transactions up to ~$1B in enterprise value and 10+ venture investments, including <strong>Anthropic</strong> and <strong>CoreWeave</strong>, while heading Corporate Development &amp; Ventures at Zoom. She also led the SafeBase investment through to its acquisition by Drata.
         </p>
         <p>
-          Most M&amp;A advisors come from one vantage point — a bank or a PE firm. Jamie has sat in the operator's seat at companies that defined their categories during the AI buildout, structuring both venture investments and acquisitions from inside the businesses making the decisions.
+          Most M&amp;A advisors come from one vantage point, a bank or a PE firm. Jamie has sat in the operator's seat at companies that defined their categories during the AI buildout, structuring both venture investments and acquisitions from inside the businesses making the decisions.
         </p>
       </div>
 
@@ -706,26 +739,40 @@
     <div class="section-eyebrow">Services</div>
     <h2 class="section-title">Selective engagements <em>across the deal lifecycle.</em></h2>
 
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">i</div>
-        <h3 class="service-title">Buy-side Advisory</h3>
-        <p class="service-desc">Target evaluation, financial diligence, valuation, and negotiation support for strategic acquirers and PE firms.</p>
+    <div class="services-group">
+      <div class="services-group-label">For Founders</div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">i</div>
+          <h3 class="service-title">Founder Advisory</h3>
+          <p class="service-desc">Capital strategy, fundraising positioning, and M&amp;A readiness for growth-stage founders preparing for their next round or exit.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">ii</div>
+          <h3 class="service-title">Sell-side Positioning</h3>
+          <p class="service-desc">Narrative development, buyer landscape mapping, and process strategy for founders running an exit.</p>
+        </div>
       </div>
-      <div class="service-card">
-        <div class="service-icon">ii</div>
-        <h3 class="service-title">Sell-side Positioning</h3>
-        <p class="service-desc">Strategic positioning, narrative development, and process strategy for founders considering an exit.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">iii</div>
-        <h3 class="service-title">Fractional Corp Dev</h3>
-        <p class="service-desc">Ongoing M&amp;A and CVC support for PE-backed and growth-stage companies — thesis, sourcing, IC process, post-close playbook.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">iv</div>
-        <h3 class="service-title">AI &amp; SaaS Diligence</h3>
-        <p class="service-desc">Specialized valuation work drawing on operating experience inside foundation model and AI infrastructure companies.</p>
+    </div>
+
+    <div class="services-group">
+      <div class="services-group-label">For Acquirers &amp; Investors</div>
+      <div class="services-grid services-grid-three">
+        <div class="service-card">
+          <div class="service-icon">i</div>
+          <h3 class="service-title">Buy-side Advisory</h3>
+          <p class="service-desc">Target evaluation, financial diligence, valuation, and negotiation support for strategic acquirers and PE firms.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">ii</div>
+          <h3 class="service-title">Fractional Corp Dev</h3>
+          <p class="service-desc">Ongoing M&amp;A and CVC support for PE-backed and growth-stage companies - thesis, sourcing, IC process, post-close playbook.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">iii</div>
+          <h3 class="service-title">AI &amp; SaaS Diligence</h3>
+          <p class="service-desc">Specialized valuation work drawing on operating experience inside foundation model and AI infrastructure companies.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -776,7 +823,7 @@
     <a href="mailto:contact@moonadvisory.group" class="contact-email">contact@moonadvisory.group</a>
 
     <div class="contact-links">
-      <a href="https://www.linkedin.com/company/moonadvisorygroup/" target="_blank" rel="noopener" class="btn btn-secondary">
+      <a href="https://linkedin.com/in/jamielmoon" target="_blank" rel="noopener" class="btn btn-secondary">
         LinkedIn →
       </a>
       <a href="mailto:contact@moonadvisory.group" class="btn btn-primary">
